@@ -56,9 +56,7 @@ class Login extends Component {
     </ul>
   </div>
 </nav>
-       
-
-        <div className="col-md-5" id="logform">
+      <div className="col-md-5" id="logform">
           <form>
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
