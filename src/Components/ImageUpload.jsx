@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import firebase, { storage } from '../config/Fire';
+import { databaseref } from '../config/Fire'
 import '../Logform.css';
-
+import '../main.css';
 
 class ImageUpload extends Component {
   constructor(props) {
@@ -40,31 +41,36 @@ class ImageUpload extends Component {
       storage.ref(`${fireuser}/${image.name}`).getDownloadURL().then(url => {
             console.log("Url Here : ");
             console.log(url);
-            this.setState({url});
-        })
 
+
+
+            this.setState({url});
+            const ref = image.name;
+            databaseref.ref(fireuser.split('@')[0]).child(ref.split('.')[0]).set({
+              link : url,
+              isExplicit : 0,
+              reason : 'None'
+            });        
+         })
     });
   }
   render() {
-    const style = {
- 
+    const style = {       
     };
     return (
-      <div style={style}>        
-        <input type="file" onChange={this.handleChange} />
+      <div className="upload">        
+        <input type="file" className="give" onChange={this.handleChange} />
             
-        <button onClick={this.handleUpload} className="btn btn-primary" >Upload</button>
+        <button onClick={this.handleUpload} className="btn btn-success" > Upload</button>
         <div>
           <br/>
         <h6>Progress is : {this.state.progress} </h6>
         <progress value={this.state.progress} max="100" />
         </div>
-        <img src={this.state.url } height="300" width="500"/>
-        <a href={this.state.url}>Download</a>
+        <img src={this.state.url || 'http://via.placeholder.com/400x300'} alt="Uploaded images" height="300" width="400"/>
 
       </div>
   )
   }
 }
-
 export default ImageUpload;

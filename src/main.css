@@ -1,0 +1,63 @@
+.DottedBox {
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-top: 0px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+  }
+
+  .colornav{
+    background-color : ;
+  }
+  body{
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .DottedBox_content {
+    font-size: 15px;
+    text-align: center;
+  }
+  .topbar{
+    align-content: center;
+    padding: 20px;
+    padding-bottom:2px;
+ 
+    background-color:#7395Ae;
+  }
+.give{
+  margin-bottom: 10px;
+}
+  body {
+    background-color: #ccffcc;
+  }
+
+  .loginform{
+    margin-top: 120px;
+    padding: 20px ;
+    padding-right: 0;
+    /* border: 1px solid black; */
+    width: 70%;
+    margin-left: 30%;
+  }
+
+.mainHome{
+  background-color: #41e6fa;
+}
+
+html, body,#root, #App, #App>div {
+  height: 100%
+}
+
+body > #root > div  {
+  height: 100vh;
+}
+.upload{
+
+  
+}
