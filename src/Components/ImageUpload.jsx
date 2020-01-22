@@ -67,9 +67,10 @@ class ImageUpload extends Component {
         <h6>Progress is : {this.state.progress} </h6>
         <progress value={this.state.progress} max="100" />
         </div>
-        <img src={this.state.url || 'http://via.placeholder.com/400x300'} alt="Uploaded images" height="300" width="400"/>
-
+        <img src={this.state.url || "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO4AAADUCAMAAACs0e/bAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAO4AAADUCAMAAACs0e/bAAAAA1BMVEX///+nxBvIAAAASElEQVR4nO3BMQEAAADCoPVPbQo/oAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+BsXsAAEee23DAAAAAElFTkSuQmCCBsXsAAEee23DAAAAAElFTkSuQmCC"} alt="Waiting for Upload ..." height="300" width="400"/>
+        
       </div>
+      // 'http://via.placeholder.com/400x300'
   )
   }
 }
