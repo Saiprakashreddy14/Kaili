@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "13.7.0",
+    "node": "12.13.0",
     "npm": "4.6.1"
   },
   "dependencies": {
@@ -26,5 +26,17 @@
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0"
-  }
+  },
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saiprakashreddy14/Kaili.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saiprakashreddy14/Kaili/issues"
+  },
+  "homepage": "https://github.com/Saiprakashreddy14/Kaili#readme"
 }
